@@ -35,11 +35,16 @@
         <p>We have sent a link to reset your password <br> to customer@gmail.com</p>
       </div>
       <form action="#" method="post" class="signup-form">
-        <button type="submit" class="login-btn"><a href="./appointment.html">Login</a></button>
+        <button type="button" class="login-btn" id="navigateToAppointment">Done</a></button>
 
       </form>
     </div>
   </div>
 </body>
 
+<script>
+  document.getElementById('navigateToAppointment').addEventListener('click', function () {
+      window.location.href = './appointment.html';
+  });
+</script>
 </html>
