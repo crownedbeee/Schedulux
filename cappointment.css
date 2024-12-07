@@ -1,0 +1,96 @@
+
+nav {
+    background-color: #D5E6FB; 
+    margin: 0;
+    padding: 15px;
+    padding-left: 96px;
+    padding-right: 96px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px; 
+    color: #333;
+    margin: 0 15px;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: #0056b3; 
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+.appointment-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.appointment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #2f80ed;
+    background: white;
+   
+}
+
+.form-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 20px;
+}
+
+.purpose{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 20px;
+}
+
+.confirm-btn{
+    width: 40%;
+    height: 30px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: #0056b3;
+}
+
+.confirm-btn:hover {
+    background-color: #0056b3;
+  }
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+  }
