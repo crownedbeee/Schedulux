@@ -18,53 +18,94 @@
   </head>
 
 <body>
-  <div class="logo-photo">
+   
+ <nav>
     <div class="logo-parent">
       <img class="logo" alt="logo" src="img/logo.png">
-      <div class="a-doctors-appointment-is-not-wrapper">
-        <div class="a-doctors-appointment" style="height: inherit; padding: 0 2rem;">
-          <p>A doctor's appointment is not just about treating illness, it's about
-            preventing it</p>
-        </div>
-      </div>
     </div>
+    <div>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="book">Book an appointment</a>
+        <a href="#" class="services">Services</a>
+        <a href="#" class="about">About Us</a>
+    </div>
+    <div class="login">
+      <a href="./login.html" class="login">Login</a>
+      <button type="button" class="sign-btn" id="navigateToSignup">Sign Up</button>
+    </div>
+   </nav>
 
-    <div class="signup-container">
-      <div class="form-header">
-        <h1>Create Your Account</h1>
-        <p>Sign up for Easy Booking</p>
-      </div>
-      <form action="#" method="post" class="signup-form">
-        <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Enter your password" required>
-        </div>
-        <div class="terms-and-condition">
-          <input type="checkbox" id="terms" class="check-box" required />
-          <label for="terms" class="terms-and-condition">
-            I agree with the <a href="#" class="tandc">Terms of Service</a>
-          </label>
-        </div>
-        <button type="button" class="submit-btn" id="navigateToAppointment">Sign Up</button>
-        <p class="continue">Or continue with</p>
-        <p class="login-redirect">Already have an account? <a href="./login.html">Log in</a></p>
-      </form>
-    </div>
+  <section class="boddy">
+   <div class="landing-page">
+   <div class="content">
+       <h1>Experience Convenience</h1>
+       <h2 class="subhead">Health Care</h2>
+        <p class="note">Stay healthy, stay happy! Regular doctor's appointments help identify potential health risks, manage chronic conditions, and prevent illnesses.</p>
+        <button type="button" class="book-btn" id="navigateToLogin">Book an Appointment</button>
+   </div>
+   <div class="image-container">
+      <img src="img/image 9095 (1).png" alt="Healthcare" class="landing-image">
   </div>
-</body>
+</div>
+</section>
 
+<section class="about-section">
+  <div class="about-image">
+      <img src="img/group-african-doctors-students-near-medical-university-outdoor_627829-3034 1 (1).png" alt="About Us Image" class="about-img">
+  </div>
+  <div class="about-content">
+      <h2 class="about-heading">About Us</h2>
+      <p class="about-text">
+        At Schedulux, we connect patients with trusted healthcare professionals. Our user-friendly platform simplifies appointment booking, saving time and improving access to quality care. We strive to make healthcare more accessible, convenient, and patient-centered.
+      </p>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-left">
+        <img src="img/Frame 33.png" alt="Logo" class="footer-logo">
+        <p class="footer-tagline">Schedulux simplifies healthcare with an easy-to-use platform for booking and rescheduling appointments.</p>
+        <div class="footer-socials">
+            <a href="#" class="social-link"><img src="img/fb.png" alt="Facebook"></a>
+            <a href="#" class="social-link"><img src="img/ig.png" alt="Instagram"></a>
+            <a href="#" class="social-link"><img src="img/twt.png" alt="Twitter"></a>
+        </div>
+    </div>
+    <div class="footer-right">
+        <div class="footer-column">
+            <h4 class="footer-title"><a href="#">Services</a></h4>
+            <a href="#" class="footer-link">Primary Care</a>
+            <a href="#" class="footer-link">Appointment booking</a>
+            <a href="#" class="footer-link">Online Consults</a>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-title"><a href="#">Find a Doctor</a></h4>
+            <a href="#" class="footer-link">Top Rated Doctor</a>
+            <a href="#" class="footer-link">Appointment Scheduling</a>
+            <a href="#" class="footer-link">Patient Reviews</a>
+            <a href="#" class="footer-link">Doctor Profile</a>
+        </div>
+        <div class="footer-column">
+            <h4 class="footer-title"><a href="#">About Us</a></h4>
+            <a href="#" class="footer-link">News and Updates</a>
+            <a href="#" class="footer-link">Careers</a>
+            <a href="#" class="footer-link">Community Involvement</a>
+            <a href="#" class="footer-link">Contact Us</a>
+        </div>
+    </div>
+</footer>
+
+</body>
 <script>
-  document.getElementById('navigateToAppointment').addEventListener('click', function () {
-      window.location.href = './appointment.html';
+  document.getElementById('navigateToSignup').addEventListener('click', function () {
+      window.location.href = './signup.html';
+  });
+
+  document.getElementById('navigateToLogin').addEventListener('click', function () {
+      window.location.href = './login.html';
   });
 </script>
 
+</html>
 </html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Page</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="signup.css">
   <!DOCTYPE html>
   <html>
 
@@ -18,23 +18,27 @@
   </head>
 
 <body>
-
   <div class="logo-photo">
     <div class="logo-parent">
       <img class="logo" alt="logo" src="img/logo.png">
       <div class="a-doctors-appointment-is-not-wrapper">
         <div class="a-doctors-appointment" style="height: inherit; padding: 0 2rem;">
-          <p>Regular health check-ups are crucial for detecting health issues before they become major problems</p>
+          <p>A doctor's appointment is not just about treating illness, it's about
+            preventing it</p>
         </div>
       </div>
     </div>
 
     <div class="signup-container">
       <div class="form-header">
-        <h1>Welcome</h1>
-        <p>please enter your login details</p>
+        <h1>Create Your Account</h1>
+        <p>Sign up for Easy Booking</p>
       </div>
       <form action="#" method="post" class="signup-form">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
         <div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Enter your email address" required>
@@ -43,10 +47,13 @@
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Enter your password" required>
         </div>
-        <div class="forgot-password">
-          <a href="./password.html" class="forgot-password">Forgot Password</a>
+        <div class="terms-and-condition">
+          <input type="checkbox" id="terms" class="check-box" required />
+          <label for="terms" class="terms-and-condition">
+            I agree with the <a href="#" class="tandc">Terms of Service</a>
+          </label>
         </div>
-        <button type="button" class="login-btn" id="navigateToAppointment">Login</button>
+        <button type="button" class="submit-btn" id="navigateToAppointment">Sign Up</button>
         <p class="continue">Or continue with</p>
         <div class="social-login-row">
           <a href="#" class="social-icon-link">
@@ -58,6 +65,9 @@
           <a href="#" class="social-icon-link">
               <img src="img/download 3.png" alt="Facebook Icon" class="social-icon">
           </a>
+      </div>
+      
+        <p class="login-redirect">Already have an account? <a href="./login.html">Log in</a></p>
       </form>
     </div>
   </div>
