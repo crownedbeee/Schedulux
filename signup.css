@@ -25,7 +25,9 @@
   /* Includes padding in the width */
 }
 
-
+body{
+  font-family: poppins;
+}
 
 .a-doctors-appointment {
   display: flex;
