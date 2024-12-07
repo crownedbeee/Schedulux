@@ -53,12 +53,18 @@
             I agree with the <a href="#" class="tandc">Terms of Service</a>
           </label>
         </div>
-        <button type="submit" class="submit-btn"><a href="appointment.html">Sign Up</a></button>
+        <button type="button" class="submit-btn" id="navigateToAppointment">Sign Up</button>
         <p class="continue">Or continue with</p>
         <p class="login-redirect">Already have an account? <a href="./login.html">Log in</a></p>
       </form>
     </div>
   </div>
 </body>
+
+<script>
+  document.getElementById('navigateToAppointment').addEventListener('click', function () {
+      window.location.href = './appointment.html';
+  });
+</script>
 
 </html>

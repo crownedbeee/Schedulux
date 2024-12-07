@@ -84,11 +84,16 @@
               </div>
 
               <div class="button">
-              <button type="submit" class="confirm-btn"><a href="./cappointment.html">Confirm & Book</a></button>
+                <button type="button" class="confirm-btn" id="navigateToCappointment">Confirm & Book</a></button>
             </div>
       </form>
     </div>
   </div>
 </body>
 
+<script>
+  document.getElementById('navigateToCappointment').addEventListener('click', function () {
+      window.location.href = './cappointment.html';
+  });
+</script>
 </html>

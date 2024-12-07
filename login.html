@@ -46,11 +46,17 @@
         <div class="forgot-password">
           <a href="./password.html" class="forgot-password">Forgot Password</a>
         </div>
-        <button type="submit" class="login-btn"><a href="./appointment.html">Login</a></button>
+        <button type="button" class="login-btn" id="navigateToAppointment">Login</button>
         <p class="continue">Or continue with</p>
       </form>
     </div>
   </div>
 </body>
+
+<script>
+  document.getElementById('navigateToAppointment').addEventListener('click', function () {
+      window.location.href = './appointment.html';
+  });
+</script>
 
 </html>
