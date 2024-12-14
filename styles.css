@@ -237,3 +237,94 @@ nav a:hover {
 .footer-link:hover {
     color: #007bff; 
 }
+
+.collapse_nav{display:none;height:25px; width:25px}
+.loginSection{display:flex; gap: 10px;}
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px){
+    nav{
+
+        padding: 0 1rem;
+    }
+    .nav-links{
+
+        display:none;
+    }
+
+    .loginSection{ display:none;}
+
+
+    .collapse_nav{
+
+        display: block;
+
+    }
+
+    .collapse_nav:hover{scale:calc(1.1)}
+
+
+    .boddy{
+
+        padding: 0.5rem 1rem;
+    }
+
+    .landing-page{
+
+        flex-direction: column;
+        
+    }
+
+    .content h1{
+
+        font-size: 2rem;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+
+    .content .subhead{
+
+        font-size:1.5rem;
+        margin-bottom:5px;
+    }
+
+    .about-section{
+
+        flex-direction: column-reverse;
+        padding: 2.5rem;
+    }
+
+    .landing-image{
+
+        height:250px; width:250px
+    }
+
+    .footer{
+
+        flex-direction:column;
+        padding: 1rem;
+    }
+    .footer-right{
+
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:5px;
+    }
+
+    .footer-link{
+
+        font-size: 13px;
+    }
+
+    .footer-title{
+        margin: 0;
+
+        font-size: 16px;
+    }
+
+    .footer-tagline{
+
+
+        font-size: 13px;
+    }
+}
